@@ -38,7 +38,7 @@ public class AuthServiceImpl implements AuthService{
                 .build();
 		
 		userRepository.save(user);
-		return null;
+		return AuthResponse.builder().token(null).build();
 	}
 
 }
